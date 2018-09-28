@@ -49,13 +49,13 @@ make_barchart.num_charts = 0
 g_stopwords = set( nltk.corpus.stopwords.words('english'))
 ####### End Definitions #######
 
-if len(sys.argv) > 3 or (len(sys.argv) == 3 and sys.argv[2] != 'nocharts'):
-    print 'Usage: "python fbparser.py filename" to create data and charts, or\n"python fbparser.py filename nocharts" to disable creating charts'
+if len(sys.argv) > 3 or len(sys.argv) == 1 or (len(sys.argv) == 3 and sys.argv[2] != 'nocharts'):
+    print 'Usage: "python fbparser.py filename.json" to create data and charts, or\n"python fbparser.py filename.json nocharts" to disable creating charts'
     exit()
 
 print 'Starting program...\n'
 print 'Opening file ', './TestFiles/DaineMcNiven/message.json', '...'
-with open(sys.argv[1]) as f:#'./TestFiles/DaineMcNiven/message.json') as f:
+with open(sys.argv[1]) as f:
     print 'Loading data from file ...'
     data = json.load(f)
     list_of_messages = data['messages']
