@@ -28,3 +28,6 @@ Ensure python 2.7 is downloaded on your machine. Use pip to download numpy, matp
 
 Download stopwords from nltk. See https://stackoverflow.com/questions/41348621/ssl-error-downloading-nltk-data. Only nltk.download('stopwords') is needed. Can also run python -m nltk.downloader stopwords.
 
+Notes:
+
+This was intended to be used as an introduction to Python for myself, along with as a fun project to share with a friend (whom I chat over FB messenger with frequently). This was not intended to be a showcase of good Python development or good programming practices, so view accordingly!
